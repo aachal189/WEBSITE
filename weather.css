@@ -1,0 +1,94 @@
+ul {
+    list-style: none;
+  }
+  
+  footer {
+    text-align: center;
+    font-family: monospace, sans-serif, times;
+    font-size: 10px;
+    color: rgb(185, 174, 175);
+  }
+  
+  .weatherApp {
+    background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/051/864/original/cloudypixabay.jpg?1667750633");
+    filter: brightness(100%);
+    background-size: cover;
+    color: white;
+    max-width: 800px;
+    display: block;
+    padding: 20px;
+    margin: 20px auto;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .currentDateTime {
+    font-size: 16px;
+    color: white;
+  }
+  
+  .currentCity {
+    font-size: 24px;
+    text-transform: capitalize;
+  }
+  
+  .units {
+    position: relative;
+    top: -25px;
+    font-weight: 100;
+    font-size: 14px;
+  }
+  
+  .linkUnits {
+    font-weight: 100;
+    font-size: 14px;
+    color: white;
+  }
+  
+  .generalText .active {
+    color: white;
+    cursor: default;
+    text-decoration: none;
+  }
+  
+  .generalText {
+    font-weight: 100;
+    font-size: 14px;
+  }
+  
+  .forecastText {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  .capitalize {
+    text-transform: capitalize;
+  }
+  
+  .currentConditionsIcon {
+    font-size: 25px;
+    margin-right: 1px;
+    position: relative;
+    top: -15px;
+  }
+  
+  .dayTemp {
+    font-weight: 600;
+    font-size: 50px;
+  }
+  
+  .forecastCondition {
+    font-size: 12px;
+    font-weight: 100;
+    margin-top: 2px;
+  }
+  
+  .forecastCondition:first-letter {
+    text-transform: capitalize;
+  }
+  
+  .search {
+    font-weight: 200;
+    font-size: 15px;
+    color: #ababb5;
+  }
+  

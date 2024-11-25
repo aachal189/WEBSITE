@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>About</title>
+    <link rel="stylesheet" href="aboutus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Style for the image section */
+        .image-section {
+            width: 50%;
+            float: left;
+        }
+
+        .image-section img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Text section styling */
+        .text-section {
+            width: 50%;
+            float: right;
+        }
+
+        /* Quote styling with a box */
+        .quote {
+            font-style: italic;
+            margin-top: 20px;
+            font-size: 16px;
+            color: #555;
+            border: 2px solid #ccc;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #005a87;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        .contact-card {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            width: 48%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+            .map {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .map-placeholder {
+            background-color: #eee;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+  
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="logo.jfif" alt="MRSAC Logo"> <!-- Logo -->
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Maxar intelligence <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="map.html">Fetch the Data</a>
+                        <a href="map1.html">Weather comparion</a>
+                        <a href="weather.html">Weather Data</a>
+                    </div>
+                </li>
+                <li><a href="service.html.html">Services</a></li>
+                <li><a href="energy.html">Applications</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">About us <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="aboutus.html">About Us</a>
+                        <a href="director.html">Director</a>
+                        <a href="facility.html">Facility</a>
+                        <a href="organization.html">organization-structure</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <div class="content-container">
+            <div class="image-section">
+                <img id="slideshow-image" src="mrsac-image.jpg" alt="MRSAC"> <!-- Image of MRSAC -->
+            </div>
+            <div class="text-section">
+                <h2>About MRSAC</h2>
+                <p>The Maharashtra Remote Sensing Application Centre (MRSAC) is an autonomous organization under the Department of Planning, Government of Maharashtra. We specialize in remote sensing, GIS, and spatial data infrastructure to support planning and development across Maharashtra.</p>
+                <p>Our work includes land use planning, agriculture monitoring, urban planning, and disaster management. We collaborate with government departments and institutions to provide geospatial data and analysis for informed decision-making.</p>
+                
+                <!-- Quote in a box -->
+                <p class="quote">"Empowering Maharashtra with advanced geospatial technology for sustainable development."</p>
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- JavaScript for image slideshow -->
+    <script>
+        const images = ["2022-11-17 (1) (1).jpg", "2024-01-30 (2) (1).jpg","2020-06-28.jpg","2018-09-30.jpg"]; // Add your image paths
+        let currentIndex = 0;
+
+        function changeImage() {
+            const imageElement = document.getElementById("slideshow-image");
+            currentIndex = (currentIndex + 1) % images.length; // Move to the next image and loop back
+            imageElement.src = images[currentIndex]; // Update the image source
+        }
+
+        // Change image every 2 seconds
+        setInterval(changeImage, 2000);
+    </script>
+
+    <div class="container">
+        <div class="contact-info">
+            <div class="contact-card">
+                <h2>Head Office</h2>
+                <p>
+                    MRSAC Building, Near VNIT Campus,<br>
+                    South Ambazari Road,<br>
+                    Nagpur - 440010<br>
+                    Maharashtra, India
+                </p>
+                <p>Phone: +91 712 2553737</p>
+                <p>Email: info@mrsac.gov.in</p>
+            </div>
+            <div class="contact-card">
+                <h2>Regional Office</h2>
+                <p>
+                    MRSAC Regional Center,<br>
+                    Survey No. 130,<br>
+                    Pune - 411045<br>
+                    Maharashtra, India
+                </p>
+                <p>Phone: +91 712 2553738</p>
+                <p>Email: pune@mrsac.gov.in</p>
+            </div>
+        </div>
+        <div class="map">
+            <h2>Location Map</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.7623798590253!2d79.0501815752592!3d21.12203758055075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0779c10ce01%3A0xc4f77613d7a4445!2sMaharashtra%20Remote%20Sensing%20Applications%20Centre!5e0!3m2!1sen!2sin!4v1732113243810!5m2!1sen!2sin" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        
+        </div>
+    </div>
+</body>
+<script>
+    // Get the menu icon and the navigation menu
+    const menuIcon = document.querySelector('.menu-icon');
+    const nav = document.querySelector('header nav ul');
+
+    // Toggle the 'active' class on the menu when the icon is clicked
+    menuIcon.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+</script>
+
+</html>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 MRSAC. All Rights Reserved.</p>
+    </div>
+</footer>

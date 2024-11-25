@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI-driven Geospatial Analytics</title>
+  <link rel="stylesheet" href="analyze.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+<header>
+    <div class="logo">
+        <img src="logo.jpg" alt="Maxar Logo"> <!-- Logo -->
+    </div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Maxar Intelligence <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="map.html">Fetch the Data</a>
+                    <a href="map1.html">Weather Comparison</a>
+                    <a href="weather.html">Weather data</a>
+                </div>
+            </li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="energy.html">Applications</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">About Us <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="aboutus.html">About Us</a>
+                    <a href="director.html">Director</a>
+                    <a href="facility.html">Facility</a>
+                    <a href="organization.html">Organization Structure</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <img src="63888fa743aba638aa90aa9c_road-safety-management.jpg" alt="Geospatial Data Visualization" class="hero-image">
+      <div class="hero-overlay">
+        <h1 class="hero-title">AI-Driven Geospatial Analytics</h1>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section light-section">
+      <div class="container">
+        <h2>About Our Platform</h2>
+        <p>Our platform provides advanced AI-driven analytics to help you interpret, analyze, and visualize geospatial data with ease, enabling data-driven decision-making and precision insights.</p>
+      </div>
+    </section>
+
+    <!-- AI Analytics Section -->
+    <section id="analytics" class="section dark-section">
+      <div class="container">
+        <h2>AI-Powered Insights</h2>
+        <p class="hero-subtitle">Access AI-powered tools for interpreting and visualizing geospatial data with precision.</p>
+        <div class="icon-section">
+          <div class="icon-card">
+            <i class="fa fa-chart-line" style="font-size:48px;color:orange"></i>
+            <p>Data Analysis</p>
+          </div>
+          <div class="icon-card">
+            <i class="fa fa-globe" style="font-size:48px;color:orange"></i>
+            <p>Geospatial Visualization</p>
+          </div>
+          <div class="icon-card">
+            <i class="fa fa-brain" style="font-size:48px;color:orange"></i>
+            <p>AI Insights</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section light-section">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="card-section">
+          <div class="card">
+            <i class="fa fa-satellite" style="font-size:48px;color:orange"></i>
+            <h3>Real-time Data Access</h3>
+            <p>Access real-time geospatial data for accurate analysis and decision-making.Gain instant access to real-time geospatial data, enabling you to make informed decisions and perform precise analyses when it matters most. This dynamic capability ensures you have up-to-date information on hand, allowing for effective responses to rapidly changing conditions, such as weather fluctuations, traffic patterns, or emergency scenarios. By leveraging real-time data, businesses, governments, and organizations can optimize operations, enhance situational awareness, and maintain a competitive edge in fast-paced environments.</p>
+          </div>
+          <div class="card">
+            <i class="fa fa-database" style="font-size:48px;color:orange"></i>
+            <h3>Data Storage & Management</h3>
+            <p>Secure storage and management solutions for all your geospatial data. 
+              Data Storage & Management
+              We provide robust, secure, and scalable solutions to store and manage all your geospatial data effectively. Our services ensure that your valuable data is protected from unauthorized access while remaining easily accessible for analysis and decision-making. Whether you are dealing with large volumes of satellite imagery, mapping datasets, or other critical geospatial information, our state-of-the-art storage systems guarantee high performance and reliability</p>
+          </div>
+          <div class="card">
+            <i class="fa fa-chart-area" style="font-size:48px;color:orange"></i>
+            <h3>Advanced Analytics</h3>
+            <p>Advanced analytics tools to help derive insights from complex geospatial datasets. Advanced analytics involves leveraging sophisticated tools and techniques to analyze complex geospatial datasets, uncovering patterns, trends, and insights that might not be immediately apparent. These tools enable users to perform in-depth data mining, predictive modeling, and statistical analysis, transforming raw geospatial data into actionable intelligence</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 MRSAC. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('header nav ul');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

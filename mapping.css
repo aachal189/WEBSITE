@@ -1,0 +1,262 @@
+/* Header Styles */
+header {
+    background-color: #ffffff;
+    color: black;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header .logo img {
+    width: 70px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    margin: 0 15px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hamburger Menu */
+  .menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  
+  /* Dropdown Styling */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+}
+
+.nav-links .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.nav-links .dropdown-content a {
+    padding: 10px 15px;
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.nav-links .dropdown-content a:hover {
+    background-color: #f97316;
+    color: white;
+}
+
+.nav-links .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        border-top: 1px solid #ccc;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links .dropdown-content {
+        position: static;
+        box-shadow: none;
+        background-color: #fff;
+    }
+}
+
+  @media (max-width: 768px) {
+    /* Hide navigation links by default */
+    header nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      padding: 10px 0;
+      border-top: 1px solid #ccc;
+    }
+  
+    /* Show menu when active class is toggled */
+    header nav ul.active {
+      display: flex;
+    }
+  
+    header nav ul li {
+      text-align: center;
+      margin: 10px 0;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  }
+  
+
+  .button {
+    background-color: #f97316;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button.ghost {
+    background: none;
+    color: #333;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    position: relative;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-title {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  
+  .heros {
+    color: white;
+  }
+  
+  /* Light Section */
+  .section {
+    padding: 4rem 0;
+  }
+  
+  .light-section {
+    background: #fff;
+  }
+  
+  .dark-section {
+    background: #333;
+    color: #fff;
+  }
+  
+  /* Icon Cards */
+  .icon-section {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+  
+  .icon-card {
+    text-align: center;
+  }
+  
+  .icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+  }
+  
+  /* CTA Section */
+  .cta-section {
+    background-color: #f97316;
+    color: white;
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+  
+  /* Footer Section */
+footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+footer a {
+  color: #ff6600;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+} 
+
+

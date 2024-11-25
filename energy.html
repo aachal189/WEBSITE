@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Service</title>
+    <link rel="stylesheet" href="energy.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="Maxar Logo"> <!-- Logo -->
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Maxar intelligence <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="map.html">Fetch the Data</a>
+                        <a href="map1.html">Weather comparion</a>
+                        <a href="weather.html">Weather data</a>
+                    </div>
+                </li>
+                <li><a href="service.html.html">Services</a></li>
+                <li><a href="energy.html">Applications</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">About us <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="aboutus.html">About Us</a>
+                        <a href="director.html">Director</a>
+                        <a href="facility.html">Facility</a>
+                        <a href="organization.html">organization-structure</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776; </div>
+         </header>
+
+
+    <main class="container">
+        <div class="content">
+            <h1>Energy Industry Applications</h1>
+            
+            <p>Satellite Imaging Corporation (SIC) provides satellite image data at different spatial, spectral, and temporal resolutions by using the appropriate combination of bands to bring out the geographical and manmade features that are most pertinent to your project for detecting and monitoring changes for oil and gas, and mineral exploration.</p>
+              <br>
+              <p>
+                The most established market in remote sensing is in the area of natural resources in the exploration of oil, gas, and minerals. Remote sensing technology aids in the selection and development of oil and gas exploration areas around the world as well as in the areas of oil spill mitigation and remediation. Through geological and geophysical seismic interpretation and use of orthorectified satellite images, it provides insight on the selection of areas to plan 2D or 3D seismic surveys for an exploration drilling program as well as aiding in the process of environmental and operational safety hazards to minimize the HSE risks. There is currently no other technology that matches or exceeds the capabilities of remote sensing and its necessity in the energy industry.
+              </p>
+              <div class="image-grid">
+                <div class="image-card">
+                    <h3>Oil & Gas</h3>
+                    <img src="Oil & Gas.jpg" alt="oil " >
+                </div>
+                <div class="image-card">
+                    <h3>Mining </h3>
+                    <img src="mining.jpg" alt="mining ">
+                </div>
+                <div class="image-card">
+                    <h3>Pipelines</h3>
+                    <img src="Pipelines.jpg" alt="Pipelines">
+                </div>
+                
+            </div>
+        </div>
+
+        <aside class="sidebar">
+            <div class="info-box">
+                <p>Satellite Imaging and geospatial data :</p>
+           
+            <div class="applications-menu">
+                <a href="energy.html" class="menu-item">Energy</a>
+                <a href="engi.html" class="menu-item">Engineering and Construction</a>
+                <a href="defens.html" class="menu-item">Defense and Security</a>
+                <a href="global.html" class="menu-item">Global Climate Change</a>
+                <a href="Environmental Management.html" class="menu-item">Environmental Management</a>
+                <a href="AI.html" class="menu-item">Artificial Intelligence </a>
+            </div>
+        </aside>
+    </main>
+
+    <script src="sjavascript.js"></script>
+
+     <!-- Footer Section -->
+     <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 MRSAC. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

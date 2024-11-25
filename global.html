@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Service</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<script>function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+}
+</script>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="Maxar Logo"> <!-- Logo -->
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Maxar intelligence <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="map.html">Fetch the Data</a>
+                        <a href="map1.html">Weather comparion</a>
+                        <a href="weather.html">Weather prediction</a>
+                    </div>
+                </li>
+                <li><a href="service.html.html">Services</a></li>
+                <li><a href="energy.html">Applications</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">About us <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="aboutus.html">About Us</a>
+                        <a href="director.html">Director</a>
+                        <a href="facility.html">Facility</a>
+                        <a href="organization.html">organization-structure</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+         </header>
+
+
+    <main class="container">
+        <div class="content">
+            <h1>Satellite Remote Sensing for Global Climate Change</h1>
+            
+            <p>With new satellite constellations being launched, covering a spectral range of 0.4 µm to 14.0 µm (micron), and availability of Artificial Intelligence (AI), Machine Learning (ML), Computer Vision (CV) algorithms and management systems, industrial and natural emissions can be detected to monitor climate change to understand and observe the changes in our weather and environment.</p> 
+           <br>
+           <p>Satellite remote sensing can contribute to a wide array of global climate-change related application areas for vegetation and ecosystem dynamics including CO2 Carbon Dioxide detection, CO4 methane detection, disaster monitoring, weather patterns, land surface climatology, hydrology, and land cover change.</p>
+            <div class="image-card">
+                <h3>Methane Plume (CO4) Detection by NASA's AVIRIS-NG Satellite - Summer 2020</h3>
+                <img src="global.jpg" alt="Crime Mapping Satellite Image">
+            </div>
+          
+        </div>
+    </div>
+
+        <aside class="sidebar">
+            <div class="info-box">
+                <p>Satellite Imaging and geospatial data :</p>
+           
+            <div class="applications-menu">
+                <a href="energy.html" class="menu-item">Energy</a>
+                <a href="engi.html" class="menu-item">Engineering and Construction</a>
+                <a href="defens.html" class="menu-item active">Defense and Security</a>
+                <a href="global.html" class="menu-item">Global Climate Change</a>
+                <a href="Environmental Management.html" class="menu-item">Environmental Management</a>
+                <a href="global.html" class="menu-item">Artificial Intelligence </a>
+            </div>
+        </aside>
+    </main>
+
+    <script src="sjavascript.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maxar Direct Access Program</title>
+  <link rel="stylesheet" href="access.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header Section -->
+<header>
+  <div class="logo">
+      <img src="logo.jpg" alt="Maxar Logo"> <!-- Logo -->
+  </div>
+  <nav>
+      <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+              <a href="#" class="dropbtn">Maxar Intelligence <i class="fa fa-caret-down"></i></a>
+              <div class="dropdown-content">
+                  <a href="map.html">Fetch the Data</a>
+                  <a href="map1.html">Weather Comparison</a>
+                  <a href="weather.html">Weather data</a>
+              </div>
+          </li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="energy.html">Applications</a></li>
+          <li class="dropdown">
+              <a href="#" class="dropbtn">About Us <i class="fa fa-caret-down"></i></a>
+              <div class="dropdown-content">
+                  <a href="aboutus.html">About Us</a>
+                  <a href="director.html">Director</a>
+                  <a href="facility.html">Facility</a>
+                  <a href="organization.html">Organization Structure</a>
+              </div>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+  </nav>
+  <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+</header>
+
+
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <img src="stunning-oceanfront-where-steep-slopes-600nw-2379596145.webp" alt="Satellite view of coastal area" class="hero-image">
+      <div class="hero-overlay">
+        <h1 class="hero-title">DIRECT ACCESS PROGRAM</h1>
+      </div>
+    </section>
+
+    <!-- Your Eyes in the Sky -->
+    <section class="section light-section">
+      <div class="container">
+        <div class="section-content">
+          <h2 class="section-title">YOUR EYES IN THE SKY</h2>
+          <br>
+          <p>Direct access to state-of-the-art satellite ground stations enables defense and intelligence customers to task and downlink data from commercial satellites to a continental and/or non-continental earth station communications site.</p>
+        </div>
+        <div class="placeholder-image"></div>
+      </div>
+    </section>
+
+    <!-- Security Resources -->
+    <section class="section dark-section">
+      <div class="container">
+        <h2 class="section-title">EXPAND YOUR NATIONAL SECURITY RESOURCES</h2>
+        <br>
+        <div class="icon-section">
+          <div class="icon-card">
+            <i class="fa fa-database" style="font-size:48px;color:orange"></i>
+            <p>Gain additional access to geospatial data</p>
+          </div>
+          <div class="icon-card">
+            <i class="fa fa-user" style="font-size:48px;color:orange"></i>
+            <p>Partner with experts to meet your mission needs</p>
+          </div>
+          <div class="icon-card">
+            <i class="fa-solid fa-satellite" style="font-size:48px;color:orange"></i>
+            <p>Leverage the latest ground station capabilities</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Access Options -->
+    <section class="section light-section">
+      <div class="container">
+        <h2 class="section-title">ACCESS OPTIONS</h2>
+        <br>
+        <div class="card-section">
+          <div class="card">
+            <i class="fa-regular fa-satellite" style="font-size:48px;color:orange"></i>
+            <h3>Direct tasking</h3>
+            <p>Earth observation from your site via an allocated satellite access window Gain unparalleled control over satellite operations with direct tasking capabilities. Using an allocated satellite access window, you can schedule and prioritize Earth observation tasks specific to your needs. This process enables real-time data acquisition and ensures that satellite resources are used efficiently to capture high-resolution imagery and geospatial data.</p>
+          </div>
+          <br>
+          <div class="card">
+            <i class="fas fa-building" style="font-size:48px;color:orange"></i>
+            <h3>Premium indirect tasking</h3>
+            <p>Securely planned high-priority tasking executed Premium Indirect Tasking refers to a highly specialized service designed to cater to high-priority needs with precision and security. This service involves securely planned and expertly executed tasking operations conducted by Maxar, a global leader in geospatial intelligence and satellite technology.</p>
+          </div>
+          <br>
+          <div class="card">
+            <i class="fa fa-area-chart" style="font-size:48px;color:orange"></i>
+            <h3>Imagery archive ordering</h3>
+            <p>View imagery from the world's largest archive, delivered to you via FTP Imagery Archive Ordering provides access to the world's largest collection of high-resolution satellite imagery, enabling users to explore a wealth of historical and contemporary geospatial data. This service is ideal for research, planning, analysis, and monitoring applications across various industries.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+          <p>&copy; 2024 MRSAC. All rights reserved. </p>
+      </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+  
+</body>
+</html> 

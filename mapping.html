@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapping Technology</title>
+  <link rel="stylesheet" href="mapping.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<!-- Header Section -->
+<header>
+    <div class="logo">
+        <img src="logo.jpg" alt="Maxar Logo"> <!-- Logo -->
+    </div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Maxar Intelligence <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="map.html">Fetch the Data</a>
+                    <a href="map1.html">Weather Comparison</a>
+                    <a href="weather.html">Weather prediction</a>
+                </div>
+            </li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="energy.html">Applications</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">About Us <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="aboutus.html">About Us</a>
+                    <a href="director.html">Director</a>
+                    <a href="facility.html">Facility</a>
+                    <a href="organization.html">Organization Structure</a>
+                </div>
+            </li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+</header>
+
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <img src="46148-thumb-720-3.jpg" alt="Mapping Technology Hero Image" class="hero-image">
+      <div class="hero-overlay">
+        <h1 class="hero-title">MAPPING TECHNOLOGY</h1>
+      </div>
+    </section>
+
+    <!-- Innovating Solutions -->
+    <section class="section light-section">
+      <div class="container">
+        <div class="section-content">
+          <h2 class="section-title">INNOVATING MAPPING SOLUTIONS</h2>
+          <p>Our cutting-edge mapping technology delivers reliable geospatial data to empower industries and public services worldwide.</p>
+        </div>
+        <div class="placeholder-image"></div>
+      </div>
+    </section>
+
+    <!-- Geospatial Services -->
+    <section class="section dark-section">
+      <div class="container">
+        <h2 class="section-title">GEOSPATIAL SERVICES</h2>
+        <p class="heros">Innovating mapping solutions to provide geospatial context for governments, industries, and public services.</p>
+        <div class="icon-section">
+          <div class="icon-card">
+            <i class="fa fa-map-marker" style="font-size:48px;color:orange"></i>
+            <p>Location-based Intelligence</p>
+          </div>
+          <div class="icon-card">
+            <i class="fa fa-globe" style="font-size:48px;color:orange"></i>
+            <p>Global Mapping Coverage</p>
+          </div>
+          <div class="icon-card">
+            <i class="fas fa-tools" style="font-size:48px;color:orange"></i>
+            <p>Customizable Mapping Tools</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Access Options -->
+    <section class="section light-section">
+      <div class="container">
+        <h2 class="section-title">ACCESS OPTIONS</h2>
+        <div class="card-section">
+          <div class="card">
+            <i class="fa fa-satellite" style="font-size:48px;color:orange"></i>
+            <h3>Satellite Imagery</h3>
+            <p>Access real-time satellite data tailored to your specific needs with advanced capabilities. Our satellite imagery services empower organizations with high-resolution, geospatial data that’s accurate, actionable, and timely. With , you gain access to one of the most comprehensive satellite imagery archives in the world. Combined with advanced AI tools, our imagery solutions help transform raw data into actionable insights for industries, governments, and research institutions globally.
+
+            </p>
+          </div>
+          <div class="card">
+            <i class="fas fa-server" style="font-size:48px;color:orange"></i>
+            <h3>Cloud Storage</h3>
+            <p>Secure and scalable data storage solutions Secure and scalable data storage solutions tailored to meet the demands of modern businesses. Maxar's cloud storage services enable organizations to store, access, and manage vast amounts of geospatial data, satellite imagery, and mission-critical information with ease and reliability. Built with advanced encryption, secure access controls, and regular compliance checks to protect sensitive data from unauthorized access or breaches.</p>
+          </div>
+          <div class="card">
+            <i class="fa fa-map" style="font-size:48px;color:orange"></i>
+            <h3>Historical Maps</h3>
+            <p>Leverage our extensive archive for research and analysis. Leverage our extensive archive of high-resolution satellite imagery and geospatial data for research, analysis, and planning. Our collection spans decades, offering a comprehensive view of historical changes in land use, urban development, environmental conditions, and more. Whether you're a researcher studying climate change, a city planner analyzing infrastructure growth, or a historian reconstructing past landscapes, our archive is an invaluable resource.
+
+                With advanced filtering options, you can easily locate the imagery and data relevant to your specific needs, enabling detailed analysis and informed decision-making. Our user-friendly interface ensures seamless access to the data, delivered securely and efficiently, helping you uncover insights and trends over time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 MRSAC. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        const navLinks = document.querySelector('header nav ul');
+        navLinks.classList.toggle('active');
+      }
+    </script>
+  </body>
+</html>
